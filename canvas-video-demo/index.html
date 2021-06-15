@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>
+      body {
+        background: #ccc;
+        color:#CCCCCC;
+      }
+      #c2 {
+        background-image: url(foo.png);
+        background-repeat: no-repeat;
+      }
+      #videoContainer {
+        display: none;
+      }
+      div {
+        float: left;
+        border :1px solid #444444;
+        padding:10px;
+        margin: 10px;
+        background:#3B3B3B;
+      }
+    </style>
+    <script src="./index.js"></script>
+  </head>
+
+  <body >
+    <div style="width: 500px; height: 500px;">
+      <video id="sourceVideo" style="width: 100%; height: 100%;" src="./video.mp4" autoplay controls="true"/>
+    </div>
+    <div>
+        <div class="c1">
+            <canvas id="c1" width="500" height="500" />
+        </div>
+        <div class="c2">
+            <canvas id="c2" width="300" height="200" />
+        </div>
+    </div>
+    <div id="videoContainer">
+      <h2>视频</h2>
+      <video width="300"
+             height="300"
+             controls="true"
+             id="canvas2video"
+             ></video>
+    </div>
+  </body>
+</html>
