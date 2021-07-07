@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "snabbdom": "^3.0.3"
+  }
+}
